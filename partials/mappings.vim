@@ -30,7 +30,7 @@ map <Leader>gs :G<cr>
 map <Leader>gc :Git commit<cr>
 map <Leader>gg :Git pull<cr>
 map <Leader>gp :Git push<cr>
-map <Leader>gl :Commits<cr>
+map <Leader>gl :Telescope git_commits<cr>
 map <Leader>gbl :Git blame<cr>
 map <Leader>gbr :Git branch<cr>
 map <Leader>gr :Git remote<cr>
