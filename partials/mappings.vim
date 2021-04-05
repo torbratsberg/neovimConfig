@@ -42,6 +42,7 @@ map <Leader>g<Right> :diffget //3<cr>
 nmap <leader>f :Telescope find_files<cr>
 nmap <leader>b :Telescope buffers<cr>
 nmap <leader>r :Telescope live_grep<cr>
+nmap <leader>t :Telescope file_browser<cr>
 
 " In file finding
 nmap gs /
@@ -80,7 +81,7 @@ inoremap {<cr> {<cr>}<ESC>O
 " Quickfix
 nmap <Leader>h :cprev<cr>
 nmap <Leader>l :cnext<cr>
-nmap <Leader>qf :copen<cr>
+nmap <Leader>qf :Telescope quickfix<cr>
 
 " Fix for a problem I had
 map gx <nop>
