@@ -44,8 +44,8 @@ nmap <leader>g<Right> :diffget //3<cr>
 nnoremap <Leader>f :Telescope find_files theme=get_dropdown<cr>
 nmap <leader>b :Telescope buffers theme=get_dropdown<cr>
 nmap <leader>r :Telescope live_grep theme=get_dropdown<cr>
-nmap <leader>t :Telescope file_browser theme=get_dropdown<cr>
-nnoremap <leader>vrc :lua require('luafiles').search_config()<CR>
+nmap <leader>a :Telescope file_browser theme=get_dropdown<cr>
+nnoremap <leader>nv :lua require('luafiles').search_config()<CR>
 nnoremap <leader>nn :lua require('luafiles').search_notes()<CR>
 
 " In file finding

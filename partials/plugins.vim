@@ -17,7 +17,5 @@ Plug 'easymotion/vim-easymotion'
 Plug 'mxw/vim-jsx'
 Plug 'morhetz/gruvbox'
 Plug 'ntk148v/vim-horizon'
-Plug 'arcticicestudio/nord-vim'
-Plug 'sonph/onehalf', { 'rtp': 'vim' }
 
 call plug#end()
