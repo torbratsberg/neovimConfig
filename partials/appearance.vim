@@ -1,6 +1,4 @@
 syntax on
-let g:gruvbox_contrast_dark='medium'
-let g:gruvbox_contrast_light='hard'
 set background=dark
 set synmaxcol=300
 set visualbell
@@ -21,5 +19,7 @@ if has("gui_running")
     highlight Delimiter guifg=#a95678
 else
     colorscheme gruvbox
+    let g:gruvbox_contrast_dark='hard'
+    let g:gruvbox_contrast_light='hard'
 endif
 

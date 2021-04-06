@@ -24,6 +24,8 @@ nmap <leader>, A,<esc>
 nmap <leader>cs :source ~/.config/nvim/init.vim<cr>
 nmap <leader>w :w<cr>
 nmap <leader>s :%s///<Left><Left>
+vmap <leader>y "+y
+nmap <leader>Y "+yy
 
 " Git commands
 nmap <leader>gs :G<cr>
