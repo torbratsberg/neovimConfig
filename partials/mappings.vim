@@ -41,10 +41,12 @@ nmap <leader>g<left> :diffget //2<cr>
 nmap <leader>g<Right> :diffget //3<cr>
 
 " Looking up stuff commands
-nmap <leader>f :Telescope find_files<cr>
-nmap <leader>b :Telescope buffers<cr>
-nmap <leader>r :Telescope live_grep<cr>
-nmap <leader>t :Telescope file_browser<cr>
+nnoremap <Leader>f :Telescope find_files theme=get_dropdown<cr>
+nmap <leader>b :Telescope buffers theme=get_dropdown<cr>
+nmap <leader>r :Telescope live_grep theme=get_dropdown<cr>
+nmap <leader>t :Telescope file_browser theme=get_dropdown<cr>
+nnoremap <leader>vrc :lua require('luafiles').search_config()<CR>
+nnoremap <leader>nn :lua require('luafiles').search_notes()<CR>
 
 " In file finding
 nmap gs /

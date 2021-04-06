@@ -1,9 +1,22 @@
+-- require('telescope').setup{
+--   defaults = {
+--     prompt_position = "top",
+--     prompt_prefix = " > ",
+--     selection_caret = " > ",
+--     entry_prefix = "   ",
+--     sorting_strategy = "ascending",
+--     layout_strategy = "center",
+--     width = 0.35,
+--   }
+-- }
+
+
 local M = {}
 
 M.search_notes = function()
     require('telescope.builtin').find_files({
         prompt_title = 'Notes',
-        cwd = '~/.vim/notes/',
+        cwd = '~/main/notes/',
     })
 end
 
