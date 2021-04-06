@@ -21,8 +21,7 @@ nmap <leader>; A;<esc>
 nmap <leader>, A,<esc>
 
 " Leader misc commands
-nmap <leader>c :source ~/.config/nvim/init.vim<cr>
-map <leader>nn :e ~/.vim/notes<cr>
+nmap <leader>cs :source ~/.config/nvim/init.vim<cr>
 nmap <leader>w :w<cr>
 nmap <leader>s :%s///<Left><Left>
 
@@ -47,9 +46,9 @@ nmap <leader>t :Telescope file_browser<cr>
 
 " In file finding
 nmap gs /
-nmap <leader><leader> <Plug>(easymotion-bd-f)
-nmap <leader>j <Plug>(easymotion-j)
-nmap <leader>k <Plug>(easymotion-k)
+map <leader><leader> <Plug>(easymotion-bd-f)
+map <leader>j <Plug>(easymotion-j)
+map <leader>k <Plug>(easymotion-k)
 
 " Easier movement between splits
 nmap <C-h> <C-w>h
@@ -66,7 +65,7 @@ vmap > > gv
 vmap <esc> <C-c>
 nnoremap <silent> , @=(foldlevel('.')?'za':"\<Space>")<cr>
 vnoremap , zf
-nmap <tab><tab> <C-6>
+nmap <tab><tab> <C-^>
 nmap <C-c> :e ~/.config/nvim/init.vim<cr>
 
 " Character completion
