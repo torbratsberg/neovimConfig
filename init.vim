@@ -8,7 +8,6 @@ runtime! partials/appearance.vim
 runtime! partials/statusline.vim
 
 " Lua stuff
-" lua require("luafiles")
 nnoremap <leader>vrc :lua require('luafiles').search_config()<CR>
 nnoremap <leader>nn :lua require('luafiles').search_notes()<CR>
 

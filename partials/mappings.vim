@@ -66,7 +66,6 @@ vmap <esc> <C-c>
 nnoremap <silent> , @=(foldlevel('.')?'za':"\<Space>")<cr>
 vnoremap , zf
 nmap <tab><tab> <C-^>
-nmap <C-c> :e ~/.config/nvim/init.vim<cr>
 
 " Character completion
 imap (<Tab> ()<Left>
