@@ -23,21 +23,21 @@ nmap <leader>, A,<esc>
 " Leader misc commands
 nmap <leader>c :source ~/.config/nvim/init.vim<cr>
 map <leader>nn :e ~/.vim/notes<cr>
-map <leader>w :w<cr>
+nmap <leader>w :w<cr>
 nmap <leader>s :%s///<Left><Left>
 
 " Git commands
-map <leader>gs :G<cr>
-map <leader>gc :Git commit<cr>
-map <leader>gg :Git pull<cr>
-map <leader>gp :Git push<cr>
-map <leader>gl :Telescope git_commits<cr>
-map <leader>gbl :Git blame<cr>
-map <leader>gbr :Git branch<cr>
-map <leader>gr :Git remote<cr>
-map <leader>gd :Gdiffsplit<cr>
-map <leader>g<left> :diffget //2<cr>
-map <leader>g<Right> :diffget //3<cr>
+nmap <leader>gs :G<cr>
+nmap <leader>gc :Git commit<cr>
+nmap <leader>gg :Git pull<cr>
+nmap <leader>gp :Git push<cr>
+nmap <leader>gl :Telescope git_commits<cr>
+nmap <leader>gbl :Git blame<cr>
+nmap <leader>gbr :Git branch<cr>
+nmap <leader>gr :Git remote<cr>
+nmap <leader>gd :Gdiffsplit<cr>
+nmap <leader>g<left> :diffget //2<cr>
+nmap <leader>g<Right> :diffget //3<cr>
 
 " Looking up stuff commands
 nmap <leader>f :Telescope find_files<cr>
@@ -47,9 +47,9 @@ nmap <leader>t :Telescope file_browser<cr>
 
 " In file finding
 nmap gs /
-map <leader><leader> <Plug>(easymotion-bd-f)
-map <leader>j <Plug>(easymotion-j)
-map <leader>k <Plug>(easymotion-k)
+nmap <leader><leader> <Plug>(easymotion-bd-f)
+nmap <leader>j <Plug>(easymotion-j)
+nmap <leader>k <Plug>(easymotion-k)
 
 " Easier movement between splits
 nmap <C-h> <C-w>h
@@ -59,8 +59,8 @@ nmap <C-l> <C-w>l
 
 " Control misc commands
 " √ = Alt + j & ª = Alt + k
-map ª :move-2<cr>
-map √ :move+1<cr>
+nmap ª :move-2<cr>
+nmap √ :move+1<cr>
 vmap < < gv
 vmap > > gv
 vmap <esc> <C-c>
@@ -84,4 +84,4 @@ nmap <leader>l :cnext<cr>
 nmap <leader>qf :Telescope quickfix<cr>
 
 " Fix for a problem I had
-map gx <nop>
+nmap gx <nop>
