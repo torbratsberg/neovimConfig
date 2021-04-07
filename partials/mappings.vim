@@ -60,6 +60,12 @@ nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
 
+" Tab commands
+nmap <leader>th :tabprev<cr>
+nmap <leader>tl :tabnext<cr>
+nmap <leader>tn :tabnew<cr>
+nmap <leader>tc :tabclose<cr>
+
 " Control misc commands
 " √ = Alt + j & ª = Alt + k
 nmap ª :move-2<cr>
