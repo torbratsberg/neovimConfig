@@ -26,6 +26,7 @@ nmap <leader>w :w<cr>
 nmap <leader>s :%s///<Left><Left>
 vmap <leader>y "+y
 nmap <leader>Y "+yy
+tmap <leader><esc> <C-\><C-n>
 
 " Git commands
 nmap <leader>gs :G<cr>

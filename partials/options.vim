@@ -32,6 +32,6 @@ set noswapfile
 set splitright
 set splitbelow
 set showmatch
+set showtabline=1
 set completeopt=longest,menuone,noinsert
 set langmap=æø;{}
-
