@@ -48,7 +48,7 @@ return {
     'I’ve finally learned what upward compatible means. It means we get to keep all our old mistakes.',
     'JavaScript logic: 0 == "0" and 0 == []; therefore, "0" != []',
     'Keyboard Failure. Press F1 to continue.',
-    'Knock, knock … Who’s there? … *very long pause* … Java.”(source',
+    'Knock, knock … Who’s there? … *very long pause* … Java.',
     'Linux is only free if your time has no value.',
     'May your programming be fun, and you vimming be quick',
     'Measuring programming progress by lines of code is like measuring aircraft building progress by weight.',
