@@ -4,7 +4,6 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
-Plug 'kyazdani42/nvim-web-devicons'
 
 " Functionality
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -17,5 +16,6 @@ Plug 'easymotion/vim-easymotion'
 Plug 'mxw/vim-jsx'
 Plug 'morhetz/gruvbox'
 Plug 'ntk148v/vim-horizon'
+Plug 'kyazdani42/nvim-web-devicons'
 
 call plug#end()

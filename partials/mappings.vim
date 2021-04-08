@@ -90,6 +90,8 @@ inoremap {<cr> {<cr>}<ESC>O
 " Quickfix
 nmap <leader>h :cprev<cr>
 nmap <leader>l :cnext<cr>
+nmap <leader>H :cfirst<cr>
+nmap <leader>L :clast<cr>
 nmap <leader>qf :Telescope quickfix<cr>
 
 " Fix for a problem I had
