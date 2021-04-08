@@ -1,6 +1,10 @@
 set colorcolumn=80
+set visualbell
+set synmaxcol=300
+set number
+set rnu
 set guioptions=
-set showtabline=0
+set showtabline=1
 set autoread
 set history=400
 set updatetime=200

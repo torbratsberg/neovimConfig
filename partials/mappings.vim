@@ -1,5 +1,5 @@
 " Keyboards should have escape key on home row
-imap fj <Esc>
+imap jj <Esc>
 
 " Enter to select first or selected from completion menu
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
@@ -60,6 +60,12 @@ nmap <C-h> <C-w>h
 nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
+
+" Tab commands
+nmap <leader>th :tabprev<cr>
+nmap <leader>tl :tabnext<cr>
+nmap <leader>tn :tabnew<cr>
+nmap <leader>tc :tabclose<cr>
 
 " Control misc commands
 " √ = Alt + j & ª = Alt + k
