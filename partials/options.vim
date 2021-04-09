@@ -1,5 +1,4 @@
 set colorcolumn=80
-set noshowmode
 set visualbell
 set synmaxcol=300
 set number
@@ -20,7 +19,6 @@ set shiftwidth=4
 set expandtab
 set autoindent
 set smartindent
-set smarttab
 set encoding=UTF-8
 set nohlsearch
 set incsearch
@@ -29,7 +27,6 @@ set ignorecase
 set noshowcmd
 set scrolloff=8
 set shortmess+=c
-set signcolumn=yes
 set lazyredraw
 set nobackup
 set nowritebackup

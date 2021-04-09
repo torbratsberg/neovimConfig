@@ -17,6 +17,6 @@ let g:python3_host_prog  = '/usr/local/bin/python3'
 let mapleader=" "
 let leader=" "
 
-" Use @ instead of ; in EasyMotion search for ISO layout convenience
+" Use , instead of ; in EasyMotion search for ISO layout convenience
 let g:EasyMotion_keys = get(g:,
-    \ 'EasyMotion_keys', 'asdghklqwertyuiopzxcvbnmfj@')
+    \ 'EasyMotion_keys', 'asdghklqwertyuiopzxcvbnmfj,')

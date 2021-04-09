@@ -15,9 +15,9 @@ if (exists("+termguicolors"))
     highlight Statement cterm=italic gui=italic ctermfg=171 guifg=#b877db
     highlight Visual gui=italic guibg=#2b2e3b guifg=#09f7a0
     highlight Delimiter guifg=#a95677
-    highlight! link TabLineFill Character
-    highlight! link TabLine Folded
-    highlight! link TabLineSel Directory
+    " highlight! link TabLineFill Character
+    " highlight! link TabLine Folded
+    " highlight! link TabLineSel Directory
 else
     colorscheme gruvbox
     let g:gruvbox_contrast_dark='medium'

@@ -17,6 +17,6 @@ Plug 'mxw/vim-jsx'
 Plug 'morhetz/gruvbox'
 Plug 'ntk148v/vim-horizon'
 Plug 'kyazdani42/nvim-web-devicons'
-Plug 'torbratsberg/luatus'
+" Plug 'torbratsberg/luatus'
 
 call plug#end()
