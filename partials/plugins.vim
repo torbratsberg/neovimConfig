@@ -18,5 +18,6 @@ Plug 'morhetz/gruvbox'
 Plug 'ntk148v/vim-horizon'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'torbratsberg/tor.nvim'
+Plug 'junegunn/goyo.vim'
 
 call plug#end()
