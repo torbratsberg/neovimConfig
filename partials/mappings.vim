@@ -27,7 +27,7 @@ nmap <leader>s :%s///<Left><Left>
 vmap <leader>y "+y
 nmap <leader>Y "+yy
 tmap <leader><esc> <C-\><C-n>
-nmap <leader>cc :Goyo<cr>
+nmap <leader>cc :Goyo<cr><space>cs
 
 " Git commands
 nmap <leader>gs :G<cr>
@@ -47,8 +47,8 @@ nnoremap <Leader>f :Telescope find_files theme=get_dropdown<cr>
 nmap <leader>b :Telescope buffers theme=get_dropdown<cr>
 nmap <leader>r :Telescope live_grep theme=get_dropdown<cr>
 nmap <leader>a :Telescope file_browser theme=get_dropdown<cr>
-nnoremap <leader>nv :lua require('luafiles').search_config()<CR>
-nnoremap <leader>nn :lua require('luafiles').search_notes()<CR>
+nnoremap <leader>nv :lua require('luafiles.init').search_config()<CR>
+nnoremap <leader>nn :lua require('luafiles.init').search_notes()<CR>
 
 " In file finding
 nmap gs /
