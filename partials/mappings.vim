@@ -36,6 +36,7 @@ nmap <leader>gg :Git pull<cr>
 nmap <leader>gp :Git push<cr>
 nmap <leader>gl :Telescope git_commits<cr>
 nmap <leader>gbl :Git blame<cr>
+nmap <leader>gbb :GitMessenger<cr>
 nmap <leader>gbr :Telescope git_branches<cr>
 nmap <leader>gr :Git remote<cr>
 nmap <leader>gd :Gdiffsplit<cr>
