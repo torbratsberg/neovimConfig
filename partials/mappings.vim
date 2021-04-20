@@ -69,7 +69,7 @@ nmap <leader>tl :tabnext<cr>
 nmap <leader>tn :tabnew<cr>
 nmap <leader>tc :tabclose<cr>
 
-" Control misc commands
+" Misc commands
 " √ = Alt + j & ª = Alt + k
 nmap ª :move-2<cr>
 nmap √ :move+1<cr>
@@ -79,6 +79,8 @@ vmap <esc> <C-c>
 nnoremap <silent> , @=(foldlevel('.')?'za':"\<Space>")<cr>
 vnoremap , zf
 nmap <tab><tab> <C-^>
+" Makes nice comment block
+nmap gcb 0i=== <esc>A ===<esc>yypyypVr=kkVr=Vjjgc
 
 " Character completion
 imap (<Tab> ()<Left>
