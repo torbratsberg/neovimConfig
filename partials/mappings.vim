@@ -75,7 +75,6 @@ nmap ª :move-2<cr>
 nmap √ :move+1<cr>
 vmap < < gv
 vmap > > gv
-vmap <esc> <C-c>
 nnoremap <silent> , @=(foldlevel('.')?'za':"\<Space>")<cr>
 vnoremap , zf
 nmap <tab><tab> <C-^>

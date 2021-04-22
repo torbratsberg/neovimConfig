@@ -1,4 +1,5 @@
 set colorcolumn=80
+set cmdheight=2
 set noshowmode
 set visualbell
 set synmaxcol=300
