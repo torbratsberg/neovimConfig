@@ -9,7 +9,6 @@ let g:coc_global_extensions = [
                 \'coc-emmet',
                 \'coc-python',
                 \'coc-phpls',
-                \'coc-phpls',
             \]
 let g:python_host_prog  = '/usr/bin/python'
 let g:python3_host_prog  = '/usr/local/bin/python3'

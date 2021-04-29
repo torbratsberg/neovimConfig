@@ -7,7 +7,8 @@ inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
 
 " Coc commands
 xmap <leader>cf  <Plug>(coc-format-selected)
-nmap <leader>cf  <Plug>(coc-format-selected)
+vmap <leader>cf  <Plug>(coc-format-selected)
+nmap <leader>cf  gg<Plug>(coc-format-selected)G
 nmap <leader>cd <Plug>(coc-definition)
 nmap <leader>cr <Plug>(coc-references)
 nmap <leader>cn  <Plug>(coc-rename)
