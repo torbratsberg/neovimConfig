@@ -21,5 +21,4 @@ Plug 'morhetz/gruvbox'
 Plug 'ntk148v/vim-horizon'
 Plug 'kyazdani42/nvim-web-devicons'
 
-
 call plug#end()

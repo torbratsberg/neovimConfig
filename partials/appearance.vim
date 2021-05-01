@@ -17,6 +17,11 @@ if (exists("+termguicolors"))
     highlight! link TabLineFill Character
     highlight! link TabLine Folded
     highlight! link TabLineSel Directory
+    augroup PyGroup
+        autocmd!
+        match PySelf /self/
+        highlight! link PySelf Folded
+    augroup END
 else
     colorscheme gruvbox
     let g:gruvbox_contrast_dark='medium'
