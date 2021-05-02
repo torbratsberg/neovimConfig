@@ -14,6 +14,7 @@ Plug 'easymotion/vim-easymotion'
 Plug 'hoob3rt/lualine.nvim'
 Plug 'junegunn/goyo.vim'
 Plug 'torbratsberg/tor.nvim'
+Plug 'torbratsberg/vim-highlight-word'
 
 " Themes and syntax
 Plug 'mxw/vim-jsx'

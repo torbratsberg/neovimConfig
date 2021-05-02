@@ -10,7 +10,6 @@ command FormatFile :call FormatFileFunc()
 function FormatFileFunc()
     call CleanParentheses()
 endfunction
-
 function CleanParentheses()
     execute '%s/([ ]/(/g'
     execute '%s/[ ])/)/g'
