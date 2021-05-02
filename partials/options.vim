@@ -13,6 +13,7 @@ set ignorecase
 set incsearch
 set langmap=æø;{}
 set lazyredraw
+set list
 set nobackup
 set nohlsearch
 set noshowcmd
