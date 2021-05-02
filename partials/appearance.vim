@@ -19,8 +19,8 @@ if (exists("+termguicolors"))
     highlight! link TabLineSel Directory
     augroup PyGroup
         autocmd!
-        match PySelf /self/
         highlight! link PySelf Folded
+        match PySelf /self/
     augroup END
 else
     colorscheme gruvbox
