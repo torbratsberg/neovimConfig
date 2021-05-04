@@ -15,11 +15,14 @@ set laststatus=2
 " set statusline+=\ %#LineNr#
 " set statusline+=\ "
 
+" 'section_separators' : ['', ''],
+" 'component_separators' : ['', ''],
+
 let g:lualine = {
     \'options' : {
     \  'theme' : 'palenight',
-    \  'section_separators' : ['', ''],
-    \  'component_separators' : ['', ''],
+    \  'section_separators' : ['', ''],
+    \  'component_separators' : ['', ''],
     \  'icons_enabled' : v:true,
     \},
     \'sections' : {

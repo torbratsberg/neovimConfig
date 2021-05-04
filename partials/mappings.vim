@@ -79,8 +79,11 @@ vmap > > gv
 nnoremap <silent> , @=(foldlevel('.')?'za':"\<Space>")<cr>
 vnoremap , zf
 nmap <tab><tab> <C-^>
+imap <S-tab> <C-v><tab>
 " Makes nice comment block
 nmap gcb 0i=== <esc>A ===<esc>yypyypVr=kkVr=Vjjgc
+" Indents current line and wraps in {}
+nmap gns >>O{<esc>jo<backspace>}<esc>kki <esc>i
 
 " Character completion
 imap (<Tab> ()<Left>
