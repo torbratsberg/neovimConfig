@@ -23,7 +23,7 @@ set nowrap
 set nowritebackup
 set number
 set path+=**
-set rnu
+set relativenumber
 set scrolloff=8
 set shiftwidth=4
 set shortmess+=c
