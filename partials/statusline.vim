@@ -29,7 +29,7 @@ let g:lualine = {
     \  'lualine_a' : [['mode', {'upper': v:true,},],],
     \  'lualine_b' : [['branch', {'icon': '',}, ],],
     \  'lualine_c' : [['filename', {'file_status': v:true,}],],
-    \  'lualine_x' : ['filetype', 'encoding', 'fileformat'],
+    \  'lualine_x' : ['diff', 'filetype', 'encoding', 'fileformat'],
     \  'lualine_y' : ['progress'],
     \  'lualine_z' : ['location'],
     \},
