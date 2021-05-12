@@ -1,5 +1,7 @@
 call plug#begin('~/.config/nvim/plugged')
 
+Plug 'arcticicestudio/nord-vim'
+
 " Telescope
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'

@@ -11,7 +11,6 @@ set hidden
 set history=400
 set ignorecase
 set incsearch
-set langmap=æø;{}
 set lazyredraw
 set list
 set nobackup
