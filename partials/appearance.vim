@@ -1,14 +1,18 @@
+" Change this variable instead of colorscheme option (for more customization)
+let g:theme = 'nord'
+
 syntax on
 set background=dark
 set guifont=Meslo:h15
 set guicursor=n-v-c-i:block-Cursor
 set guicursor+=n-v-c:blinkon0
+set termguicolors
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 
-if (exists("+termguicolors"))
+if g:theme == 'horizon'
     colorscheme horizon
-    set termguicolors
-    let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-    let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+    let g:lualine_theme = 'nightfly'
     highlight Pmenu guibg=#6c6f93
     highlight Cursor guifg=#000000 guibg=#e95678
     highlight htmlTagName gui=italic guifg=#21bfc2
@@ -17,7 +21,11 @@ if (exists("+termguicolors"))
     highlight! link TabLineFill Character
     highlight! link TabLine Folded
     highlight! link TabLineSel Directory
-else
+elseif g:theme == 'gruvbox'
     colorscheme gruvbox
     let g:gruvbox_contrast_dark='medium'
+    let g:lualine_theme = 'gruvbox'
+elseif g:theme == 'nord'
+    colorscheme nord
+    let g:lualine_theme = 'nord'
 endif
