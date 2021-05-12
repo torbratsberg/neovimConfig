@@ -63,10 +63,10 @@ nmap <C-h> <C-w>h
 nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
-nmap + <C-w>+
-nmap - <C-w>-
-nmap ø <C-w><
-nmap æ <C-w>>
+nnoremap <silent> <Leader><Up> :exe "resize " . (winheight(0) * 3/2)<CR>
+nnoremap <silent> <Leader><Down> :exe "resize " . (winheight(0) * 2/3)<CR>
+nnoremap <silent> <Leader><Right> :exe "vertical resize " . (winwidth(0) * 3/2)<CR>
+nnoremap <silent> <Leader><Left> :exe "vertical resize " . (winwidth(0) * 2/3)<CR>
 
 " Tab commands
 nmap <leader>th :tabprev<cr>
