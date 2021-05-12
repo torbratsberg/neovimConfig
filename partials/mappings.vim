@@ -27,7 +27,6 @@ nmap <leader>w :w<cr>
 nmap <leader>s :%s///<Left><Left>
 vmap <leader>y "+y
 tmap <leader><esc> <C-\><C-n>
-nmap <leader>cc :Goyo<cr><space>cs
 nmap <leader>tw :ToggleHightlightCWord<cr>
 
 " Git commands
@@ -50,6 +49,7 @@ nmap <leader>r :Telescope live_grep theme=get_dropdown<cr>
 nmap <leader>a :Telescope file_browser theme=get_dropdown<cr>
 nnoremap <leader>nv :lua require('luafiles.init').search_config()<CR>
 nnoremap <leader>nn :lua require('luafiles.init').search_notes()<CR>
+nmap <leader>nt :NERDTreeToggle<cr>
 
 " In file finding
 nmap gs /

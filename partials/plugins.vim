@@ -12,7 +12,7 @@ Plug 'dhruvasagar/vim-table-mode'
 Plug 'tpope/vim-fugitive'
 Plug 'easymotion/vim-easymotion'
 Plug 'hoob3rt/lualine.nvim'
-Plug 'junegunn/goyo.vim'
+Plug 'preservim/nerdtree'
 
 " Themes and syntax
 Plug 'torbratsberg/vim-highlight-word'
