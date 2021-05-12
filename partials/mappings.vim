@@ -26,7 +26,6 @@ nmap <leader>cs :source ~/.config/nvim/init.vim<cr>
 nmap <leader>w :w<cr>
 nmap <leader>s :%s///<Left><Left>
 vmap <leader>y "+y
-nmap <leader>Y "+yy
 tmap <leader><esc> <C-\><C-n>
 nmap <leader>cc :Goyo<cr><space>cs
 nmap <leader>tw :ToggleHightlightCWord<cr>
@@ -63,10 +62,14 @@ nmap <C-h> <C-w>h
 nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
-nnoremap <silent> <Leader><Up> :exe "resize " . (winheight(0) * 3/2)<CR>
-nnoremap <silent> <Leader><Down> :exe "resize " . (winheight(0) * 2/3)<CR>
-nnoremap <silent> <Leader><Right> :exe "vertical resize " . (winwidth(0) * 3/2)<CR>
-nnoremap <silent> <Leader><Left> :exe "vertical resize " . (winwidth(0) * 2/3)<CR>
+nnoremap <silent> <Leader><Up> :exe "resize " .
+            \(winheight(0) * 3/2)<CR>
+nnoremap <silent> <Leader><Down> :exe "resize " .
+            \(winheight(0) * 2/3)<CR>
+nnoremap <silent> <Leader><Right> :exe "vertical resize " .
+            \(winwidth(0) * 3/2)<CR>
+nnoremap <silent> <Leader><Left> :exe "vertical resize " .
+            \(winwidth(0) * 2/3)<CR>
 
 " Tab commands
 nmap <leader>th :tabprev<cr>
