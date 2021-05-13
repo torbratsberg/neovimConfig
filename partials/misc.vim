@@ -1,6 +1,10 @@
 filetype plugin indent on
 autocmd FileType scss setl iskeyword+=@-@
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
+" Easymotion searcg triggered all possible errors in Coc, this is fix for that
+autocmd User EasyMotionPromptBegin silent! CocDisable
+autocmd User EasyMotionPromptEnd silent! CocEnable
+
 augroup LuaGroup
     autocmd!
     autocmd FocusGained * lua require('luafiles.init').quote()

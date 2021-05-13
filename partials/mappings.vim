@@ -47,22 +47,22 @@ nmap <leader>g<Right> :diffget //3<cr>
 nnoremap <Leader>f :Telescope find_files theme=get_dropdown<cr>
 nmap <leader>b :Telescope buffers theme=get_dropdown<cr>
 nmap <leader>r :Telescope live_grep theme=get_dropdown<cr>
-nmap <leader>a :Telescope file_browser theme=get_dropdown<cr>
 nnoremap <leader>nv :lua require('luafiles.init').search_config()<CR>
 nnoremap <leader>nn :lua require('luafiles.init').search_notes()<CR>
 nmap <leader>nt :NERDTreeToggle<cr>
 
 " In file finding
 nmap gs /
-map <leader><leader> <Plug>(easymotion-bd-f)
-map <leader>j <Plug>(easymotion-j)
-map <leader>k <Plug>(easymotion-k)
+nmap <leader>a <Plug>(easymotion-bd-f)
+nmap <leader>j <Plug>(easymotion-j)
+nmap <leader>k <Plug>(easymotion-k)
 
 " Easier movement between splits
 nmap <C-h> <C-w>h
 nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
+" Resize splits easier
 nnoremap <silent> <Leader><Up> :exe "resize " .
             \(winheight(0) * 3/2)<CR>
 nnoremap <silent> <Leader><Down> :exe "resize " .
