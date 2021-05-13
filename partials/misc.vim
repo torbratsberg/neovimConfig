@@ -1,5 +1,6 @@
 filetype plugin indent on
 autocmd FileType scss setl iskeyword+=@-@
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
 augroup LuaGroup
     autocmd!
     autocmd FocusGained * lua require('luafiles.init').quote()

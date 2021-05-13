@@ -1,5 +1,5 @@
 " Change this variable instead of colorscheme option (for more customization)
-let g:theme = 'nord'
+let g:theme = 'horizon'
 
 syntax on
 set background=dark

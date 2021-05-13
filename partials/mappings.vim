@@ -28,6 +28,7 @@ nmap <leader>s :%s///<Left><Left>
 vmap <leader>y "+y
 tmap <leader><esc> <C-\><C-n>
 nmap <leader>tw :ToggleHightlightCWord<cr>
+nmap <leader>pp :Prettier<cr>
 
 " Git commands
 nmap <leader>gs :G<cr>
