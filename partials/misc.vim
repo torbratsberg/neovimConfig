@@ -1,9 +1,13 @@
 filetype plugin indent on
 autocmd FileType scss setl iskeyword+=@-@
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
+
 " Easymotion searcg triggered all possible errors in Coc, this is fix for that
-autocmd User EasyMotionPromptBegin silent! CocDisable
-autocmd User EasyMotionPromptEnd silent! CocEnable
+augroup EasyMotionFix
+    autocmd!
+    autocmd User EasyMotionPromptBegin silent! CocDisable
+    autocmd User EasyMotionPromptEnd silent! CocEnable
+augroup END
 
 augroup LuaGroup
     autocmd!
@@ -11,13 +15,10 @@ augroup LuaGroup
 augroup END
 
 command FormatFile :call FormatFileFunc()
-
 function FormatFileFunc()
-    call CleanParentheses()
-endfunction
-function CleanParentheses()
     execute '%s/([ ]/(/g'
     execute '%s/[ ])/)/g'
+    norm gg=G
 endfunction
 
 " Prints the highlight group of word under cursor
