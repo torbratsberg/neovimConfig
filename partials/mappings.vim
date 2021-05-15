@@ -53,9 +53,9 @@ nmap <leader>nt :NERDTreeToggle<cr>
 
 " In file finding
 nmap gs /
-nmap <leader>a <Plug>(easymotion-bd-f)
-nmap <leader>j <Plug>(easymotion-j)
-nmap <leader>k <Plug>(easymotion-k)
+map <leader>a <Plug>(easymotion-bd-f)
+map <leader>j <Plug>(easymotion-j)
+map <leader>k <Plug>(easymotion-k)
 
 " Easier movement between splits
 nmap <C-h> <C-w>h
