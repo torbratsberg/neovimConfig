@@ -87,7 +87,6 @@ vmap > > gv
 nnoremap <silent> , @=(foldlevel('.')?'za':"\<Space>")<cr>
 vnoremap , zf
 nmap <tab><tab> <C-^>
-imap <S-tab> <C-v><tab>
 " Makes nice comment block
 nmap gcb 0i=== <esc>A ===<esc>yypyypVr=kkVr=Vjjgc
 " Indents current line and wraps in {}
@@ -99,7 +98,6 @@ imap [<Tab> []<Left>
 imap {<Tab> {}<Left>
 imap '<Tab> ''<Left>
 imap "<Tab> ""<Left>
-imap `<Tab> ``<Left>
 inoremap {<cr> {<cr>}<ESC>O
 
 " Quickfix

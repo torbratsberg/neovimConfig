@@ -12,12 +12,12 @@ set history=400
 set ignorecase
 set incsearch
 set lazyredraw
-set list
 set nobackup
 set nohlsearch
 set noshowcmd
 set noshowmode
 set noswapfile
+set novisualbell
 set nowrap
 set nowritebackup
 set number
@@ -34,7 +34,6 @@ set splitbelow
 set splitright
 set synmaxcol=300
 set tabstop=4
-set updatetime=200
-set visualbell
+set updatetime=50
 set wildignore+=**/node_modules/**,*.o,*.pyc,**/venv/**
 set wildmenu
