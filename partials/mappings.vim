@@ -1,5 +1,6 @@
 " Keyboards should have escape key on home row
 imap jj <Esc>
+tmap jj <C-\><C-n>
 
 " Enter to select first or selected from completion menu
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
