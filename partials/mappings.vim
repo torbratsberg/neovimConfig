@@ -74,8 +74,6 @@ nnoremap <silent> <Leader><Left> :exe "vertical resize " .
             \(winwidth(0) * 2/3)<CR>
 
 " Tab commands
-nmap <leader>th :tabprev<cr>
-nmap <leader>tl :tabnext<cr>
 nmap <leader>tn :tabnew<cr>
 nmap <leader>tc :tabclose<cr>
 

@@ -1,5 +1,5 @@
 " Change this variable instead of colorscheme option (for more customization)
-let g:theme = 'horizon'
+let g:theme = 'gruvbox'
 
 syntax on
 set background=dark
