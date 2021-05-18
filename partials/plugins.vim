@@ -8,7 +8,6 @@ Plug 'nvim-telescope/telescope.nvim'
 " Functionality
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'tpope/vim-commentary'
-Plug 'dhruvasagar/vim-table-mode'
 Plug 'tpope/vim-fugitive'
 Plug 'easymotion/vim-easymotion'
 Plug 'hoob3rt/lualine.nvim'
