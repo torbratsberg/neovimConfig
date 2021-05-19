@@ -23,7 +23,7 @@ if g:theme == 'horizon'
     highlight! link TabLineSel Directory
 elseif g:theme == 'gruvbox'
     colorscheme gruvbox
-    let g:gruvbox_contrast_dark='medium'
+    let g:gruvbox_contrast_dark='hard'
     let g:lualine_theme = 'gruvbox'
 elseif g:theme == 'nord'
     colorscheme nord
