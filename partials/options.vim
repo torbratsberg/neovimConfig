@@ -37,3 +37,4 @@ set tabstop=4
 set updatetime=50
 set wildignore+=**/node_modules/**,*.o,*.pyc,**/venv/**
 set wildmenu
+set listchars=tab:\ \ ,nbsp:·,trail:·

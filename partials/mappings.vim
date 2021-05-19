@@ -15,6 +15,8 @@ nmap <leader>cr <Plug>(coc-references)
 nmap <leader>cn <Plug>(coc-rename)
 nmap <leader>cp :CocList diagnostics<cr>
 nmap <leader>co :CocList outline<cr>
+imap <nowait><expr> <C-f> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(1)\<cr>" : "\<Right>"
+imap <nowait><expr> <C-b> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(0)\<cr>" : "\<Left>"
 
 " Add characters
 nmap <leader>qd ciw""<esc>P
