@@ -19,6 +19,8 @@ nmap <leader>co :CocList outline<cr>
 " Add characters
 nmap <leader>qd ciw""<esc>P
 nmap <leader>qs ciw''<esc>P
+vmap <leader>qd s""<esc>P
+vmap <leader>qs s''<esc>P
 nmap <leader>; A;<esc>
 nmap <leader>, A,<esc>
 
