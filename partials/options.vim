@@ -1,6 +1,6 @@
 set autoindent
 set autoread
-set cmdheight=2
+set cmdheight=1
 set colorcolumn=80
 set completeopt=longest,menuone,noinsert
 set encoding=UTF-8

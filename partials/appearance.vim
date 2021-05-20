@@ -1,5 +1,5 @@
 " Change this variable instead of colorscheme option (for more customization)
-let g:theme = 'gruvbox'
+let g:theme = 'horizon'
 
 syntax on
 set background=dark
@@ -12,7 +12,6 @@ let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 
 if g:theme == 'horizon'
     colorscheme horizon
-    let g:lualine_theme = 'nightfly'
     highlight Pmenu guibg=#6c6f93
     highlight Cursor guifg=#000000 guibg=#e95678
     highlight htmlTagName gui=italic guifg=#21bfc2
@@ -24,8 +23,6 @@ if g:theme == 'horizon'
 elseif g:theme == 'gruvbox'
     colorscheme gruvbox
     let g:gruvbox_contrast_dark='hard'
-    let g:lualine_theme = 'gruvbox'
 elseif g:theme == 'nord'
     colorscheme nord
-    let g:lualine_theme = 'nord'
 endif
