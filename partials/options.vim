@@ -11,7 +11,9 @@ set hidden
 set history=400
 set ignorecase
 set incsearch
+set laststatus=2
 set lazyredraw
+set listchars=tab:\ \ ,nbsp:·,trail:·
 set nobackup
 set nohlsearch
 set noshowcmd
@@ -37,4 +39,3 @@ set tabstop=4
 set updatetime=50
 set wildignore+=**/node_modules/**,*.o,*.pyc,**/venv/**
 set wildmenu
-set listchars=tab:\ \ ,nbsp:·,trail:·

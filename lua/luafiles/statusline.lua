@@ -62,7 +62,6 @@ M.init = function()
 
     local function ins_left(component)
         table.insert(config.sections.lualine_c, component)
-        -- table.insert(config.inactive_sections.lualine_c, component)
     end
 
     local function ins_right(component)
@@ -89,6 +88,7 @@ M.init = function()
                 s = colors.orange,
                 S = colors.orange,
                 [''] = colors.orange,
+                [''] = colors.blue,
                 ic = colors.yellow,
                 R = colors.violet,
                 Rv = colors.violet,
@@ -134,6 +134,12 @@ M.init = function()
         'filename',
         condition = conditions.buffer_not_empty,
         color = {fg = colors.magenta, gui = 'italic'},
+    }
+
+    ins_left {
+        'filetype',
+        icons_enabled = true,
+        color = {fg = colors.green},
     }
 
     ins_left {'location'}
