@@ -112,3 +112,10 @@ nmap <leader>qf :Telescope quickfix<cr>
 
 " Fix for a problem I had
 nmap gx <nop>
+
+" Make nmaps for navigating to marks with space{number}
+let i = 0
+while i < 10
+    exec "nmap <leader>" . i . " '" . i
+    let i = i + 1
+endwhile
