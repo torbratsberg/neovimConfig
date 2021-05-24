@@ -142,7 +142,10 @@ M.init = function()
         color = {fg = colors.green},
     }
 
-    ins_left {'location'}
+    ins_left {
+        function() return '' .. os.date('%H:%M') .. '' end,
+        color = {fg = colors.cyan},
+    }
 
     -- Insert mid section
     ins_left {function() return '%=' end}
@@ -151,11 +154,15 @@ M.init = function()
     -- Right side -- 
     ----------------
 
+    ins_right {'location'}
+
     ins_right {
-        'o:encoding',
-        upper = false,
-        condition = conditions.hide_in_width,
-        color = {fg = colors.green}
+        'diff',
+        symbols = {added = ' ', modified = ' ', removed = ' '},
+        color_added = colors.green,
+        color_modified = colors.orange,
+        color_removed = colors.red,
+        condition = conditions.hide_in_width
     }
 
     ins_right {
@@ -173,15 +180,6 @@ M.init = function()
     }
 
     ins_right {
-        'diff',
-        symbols = {added = ' ', modified = ' ', removed = ' '},
-        color_added = colors.green,
-        color_modified = colors.orange,
-        color_removed = colors.red,
-        condition = conditions.hide_in_width
-    }
-
-    ins_right {
         function() return '▊' end,
         color = "LualineMode",
         right_padding = 0
@@ -191,3 +189,5 @@ M.init = function()
 end
 
 return M
+
+
