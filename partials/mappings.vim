@@ -94,6 +94,8 @@ nmap <tab><tab> <C-^>
 nmap gcb 0i=== <esc>A ===<esc>yypyypVr=kkVr=Vjjgc
 " Indents current line and wraps in {}
 nmap gns >>O{<esc>jo<backspace>}<esc>kki <esc>i
+" Selects indentation level (See partials/misc.vim for function code)
+nmap <cr> :call SelectIndent()<CR>
 
 " Character completion
 imap (<Tab> ()<Left>

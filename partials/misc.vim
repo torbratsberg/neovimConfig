@@ -31,3 +31,14 @@ function! <SID>SynStack()
     endif
     echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
 endfunc
+
+function! SelectIndent ()
+    let temp_var=indent(line("."))
+    while indent(line(".")-1) >= temp_var
+        exe "normal k"
+    endwhile
+    exe "normal V"
+    while indent(line(".")+1) >= temp_var
+        exe "normal j"
+    endwhile
+endfun
