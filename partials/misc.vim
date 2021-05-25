@@ -11,11 +11,6 @@ augroup EasyMotionFix
     autocmd User EasyMotionPromptEnd silent! CocEnable
 augroup END
 
-augroup LuaGroup
-    autocmd!
-    autocmd FocusGained * lua require('luafiles.init').quote()
-augroup END
-
 command FormatFile :call FormatFileFunc()
 function FormatFileFunc()
     execute '%s/([ ]/(/g'

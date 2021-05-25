@@ -1,5 +1,3 @@
-require('luafiles.util')
-
 local M = {}
 
 M.search_notes = function()
@@ -16,12 +14,6 @@ M.search_config = function()
         cwd = '~/.config/nvim/',
         previewer = false,
     })
-end
-
-M.quote = function()
-    local quotes = require('luafiles.quotes')
-    local quote = quotes[math.random(1, TableLength(quotes))]
-    print(quote)
 end
 
 return M
