@@ -13,6 +13,7 @@ set ignorecase
 set incsearch
 set laststatus=2
 set lazyredraw
+set list
 set listchars=tab:\ \ ,nbsp:·,trail:·
 set nobackup
 set nohlsearch
