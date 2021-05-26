@@ -49,9 +49,9 @@ nmap <leader>g<left> :diffget //2<cr>
 nmap <leader>g<Right> :diffget //3<cr>
 
 " Looking up stuff commands
-nnoremap <Leader>f :Telescope find_files theme=get_dropdown<cr>
-nmap <leader>b :Telescope buffers theme=get_dropdown<cr>
-nmap <leader>r :Telescope live_grep theme=get_dropdown<cr>
+nnoremap <Leader>f :Telescope find_files<cr>
+nmap <leader>b :Telescope buffers<cr>
+nmap <leader>r :Telescope live_grep<cr>
 nnoremap <leader>nv :lua require('luafiles.init').search_config()<CR>
 nnoremap <leader>nn :lua require('luafiles.init').search_notes()<CR>
 nmap <leader>e :Telescope file_browser<cr>
