@@ -40,7 +40,7 @@ nmap <leader>gs :G<cr>
 nmap <leader>gc :Git commit<cr>
 nmap <leader>gg :Git pull<cr>
 nmap <leader>gp :Git push<cr>
-nmap <leader>gl :Telescope git_commits<cr>
+nmap <leader>gl :Git log<cr>
 nmap <leader>gbl :Git blame<cr>
 nmap <leader>gbr :Telescope git_branches<cr>
 nmap <leader>gr :Git remote<cr>
@@ -49,9 +49,10 @@ nmap <leader>g<left> :diffget //2<cr>
 nmap <leader>g<Right> :diffget //3<cr>
 
 " Looking up stuff commands
-nnoremap <Leader>f :Telescope find_files<cr>
+nmap <Leader>f :Telescope find_files<cr>
 nmap <leader>b :Telescope buffers<cr>
-nmap <leader>r :Telescope live_grep<cr>
+nmap <leader>rl :Telescope live_grep<cr>
+nmap <leader>rs :Telescope grep_string<cr>
 nnoremap <leader>nv :lua require('luafiles.init').search_config()<CR>
 nnoremap <leader>nn :lua require('luafiles.init').search_notes()<CR>
 nmap <leader>e :Telescope file_browser<cr>
@@ -116,8 +117,6 @@ nmap <leader>qf :Telescope quickfix<cr>
 nmap gx <nop>
 
 " Make nmaps for navigating to marks with space{number}
-let i = 0
-while i < 10
+for i in range(0, 9)
     exec "nmap <leader>" . i . " '" . i
-    let i = i + 1
-endwhile
+endfor
