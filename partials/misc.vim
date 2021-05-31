@@ -15,7 +15,6 @@ command FormatFile :call FormatFileFunc()
 function FormatFileFunc()
     execute '%s/([ ]/(/g'
     execute '%s/[ ])/)/g'
-    norm gg=G
 endfunction
 
 " Prints the highlight group of word under cursor
