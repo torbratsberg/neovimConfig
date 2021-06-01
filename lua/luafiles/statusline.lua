@@ -142,11 +142,6 @@ M.init = function()
         color = {fg = colors.green},
     }
 
-    ins_left {
-        function() return '' .. os.date('%H:%M') .. '' end,
-        color = {fg = colors.cyan},
-    }
-
     -- Insert mid section
     ins_left {function() return '%=' end}
 
