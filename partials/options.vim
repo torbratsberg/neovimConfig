@@ -24,4 +24,7 @@ set sidescrolloff=20
 set smartcase
 set smartindent
 set tabstop=4
+set splitbelow
+set splitright
 set updatetime=100
+set synmaxcol=300

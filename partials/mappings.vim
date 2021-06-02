@@ -98,7 +98,8 @@ nmap gns >>O{<esc>jo<backspace>}<esc>kki <esc>i
 " Console logs variable under cursor on next line
 nmap gcl viwyoconsole.log('<esc>pA', <esc>pA);<esc>_
 " Selects indentation level (See partials/misc.vim for function code)
-nmap <cr> :call SelectIndent()<CR>
+" nmap <cr> :call SelectIndent()<CR>
+nmap <cr> :call SelectIndentWithSpace()<CR>
 
 " Character completion
 imap (<Tab> ()<Left>
