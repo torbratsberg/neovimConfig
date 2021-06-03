@@ -1,5 +1,6 @@
 " Keyboards should have escape key on home row
 imap jj <Esc>
+cmap jj <C-c>
 tmap jj <C-\><C-n>
 
 " Enter to select first or selected from completion menu
@@ -105,7 +106,6 @@ nmap gns >>O{<esc>jo<backspace>}<esc>kki <esc>i
 " Console logs variable under cursor on next line
 nmap gcl viwyoconsole.log('<esc>pA', <esc>pA);<esc>_
 " Selects indentation level (See partials/misc.vim for function code)
-" nmap <cr> :call SelectIndent()<CR>
 nmap <cr> :call SelectIndentWithSpace()<CR>
 
 " Character completion
