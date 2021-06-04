@@ -12,6 +12,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'easymotion/vim-easymotion'
 Plug 'hoob3rt/lualine.nvim'
 Plug 'diepm/vim-rest-console'
+Plug 'godlygeek/tabular'
 
 " Themes and syntax
 Plug 'torbratsberg/vim-highlight-word'

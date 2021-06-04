@@ -90,6 +90,9 @@ nnoremap <silent> <Leader><Left> :exe "vertical resize " .
 nmap <leader>tn :tabnew<cr>
 nmap <leader>tc :tabclose<cr>
 
+" Tabular
+nmap <leader>tt :Tabularize /\s<cr>
+
 " Misc commands
 " √ = Alt + j & ª = Alt + k
 nmap ª :move-2<cr>

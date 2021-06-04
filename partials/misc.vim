@@ -1,6 +1,5 @@
 filetype plugin indent on
 autocmd FileType scss setl iskeyword+=@-@
-command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 lua require("luafiles.statusline").init()
 
@@ -11,7 +10,6 @@ augroup EasyMotionFix
     autocmd User EasyMotionPromptEnd silent! CocEnable
 augroup END
 
-command FormatFile :call FormatFileFunc()
 function FormatFileFunc()
     execute '%s/([ ]/(/g'
     execute '%s/[ ])/)/g'
