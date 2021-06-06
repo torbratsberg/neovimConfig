@@ -1,8 +1,6 @@
 filetype plugin indent on
 autocmd FileType scss setl iskeyword+=@-@
 
-lua require("luafiles.statusline").init()
-
 " Easymotion search triggered all possible errors in Coc, this is fix for that
 augroup EasyMotionFix
     autocmd!

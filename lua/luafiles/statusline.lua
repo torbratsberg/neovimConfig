@@ -9,7 +9,6 @@ M.init = function()
         fg = '#bbc2cf',
         yellow = '#ECBE7B',
         cyan = '#008080',
-        darkblue = '#081633',
         green = '#98be65',
         orange = '#FF8800',
         violet = '#a9a1e1',
@@ -79,55 +78,33 @@ M.init = function()
         function()
             local mode_color = {
                 n = colors.red,
-                i = colors.green,
+                i = colors.magenta,
                 v = colors.blue,
-                [''] = colors.blue,
                 V = colors.blue,
-                c = colors.magenta,
-                no = colors.red,
-                s = colors.orange,
-                S = colors.orange,
-                [''] = colors.orange,
                 [''] = colors.blue,
-                ic = colors.yellow,
-                R = colors.violet,
-                Rv = colors.violet,
-                cv = colors.red,
-                ce = colors.red,
-                r = colors.cyan,
-                rm = colors.cyan,
-                ['r?'] = colors.cyan,
-                ['!'] = colors.red,
+                -- [''] = colors.blue,
+                c = colors.magenta,
+                -- no = colors.red,
+                -- s = colors.orange,
+                -- S = colors.orange,
+                -- [''] = colors.orange,
+                -- ic = colors.yellow,
+                R = colors.cyan,
+                -- Rv = colors.violet,
+                -- cv = colors.red,
+                -- ce = colors.red,
+                -- r = colors.cyan,
+                -- rm = colors.cyan,
+                -- ['r?'] = colors.cyan,
+                -- ['!'] = colors.red,
                 t = colors.red
             }
             vim.api.nvim_command(
-            'hi! LualineMode guifg=' .. mode_color[vim.fn.mode()] .. " guibg=" ..
-            colors.bg)
-            return ''
+            'hi! LualineMode guifg=' .. mode_color[vim.fn.mode()] .. " guibg=" .. colors.bg)
+            return string.upper(vim.fn.mode())
         end,
         color = "LualineMode",
         left_padding = 0
-    }
-
-    ins_left {
-        -- Filesize component
-        function()
-            local function format_file_size(file)
-                local size = vim.fn.getfsize(file)
-                if size <= 0 then return '' end
-                local sufixes = {'b', 'k', 'm', 'g'}
-                local i = 1
-                while size > 1024 do
-                    size = size / 1024
-                    i = i + 1
-                end
-                return string.format('%.1f%s', size, sufixes[i])
-            end
-            local file = vim.fn.expand('%:p')
-            if string.len(file) == 0 then return '' end
-            return format_file_size(file)
-        end,
-        condition = conditions.buffer_not_empty
     }
 
     ins_left {
@@ -153,25 +130,25 @@ M.init = function()
 
     ins_right {
         'diff',
-        symbols = {added = ' ', modified = ' ', removed = ' '},
+        symbols = {added = '+', modified = '•', removed = '-'},
         color_added = colors.green,
         color_modified = colors.orange,
         color_removed = colors.red,
         condition = conditions.hide_in_width
     }
 
-    ins_right {
-        'fileformat',
-        upper = true,
-        icons_enabled = true,
-        color = {fg = colors.green}
-    }
+    -- ins_right {
+    --     'fileformat',
+    --     upper = true,
+    --     icons_enabled = true,
+    --     color = {fg = colors.green}
+    -- }
 
     ins_right {
         'branch',
-        icon = '',
+        icon = '',
         condition = conditions.check_git_workspace,
-        color = {fg = colors.violet},
+        color = {fg = colors.magenta, gui = 'italic'},
     }
 
     ins_right {

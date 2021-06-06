@@ -10,6 +10,8 @@ set list
 set listchars=tab:\ \ ,nbsp:·,trail:·
 set nobackup
 set nohlsearch
+set noshowcmd
+set noshowmode
 set noswapfile
 set nowrap
 set nowritebackup
@@ -23,8 +25,8 @@ set showmatch
 set sidescrolloff=20
 set smartcase
 set smartindent
-set tabstop=4
 set splitbelow
 set splitright
-set updatetime=100
 set synmaxcol=300
+set tabstop=4
+set updatetime=100
