@@ -137,13 +137,6 @@ M.init = function()
         condition = conditions.hide_in_width
     }
 
-    -- ins_right {
-    --     'fileformat',
-    --     upper = true,
-    --     icons_enabled = true,
-    --     color = {fg = colors.green}
-    -- }
-
     ins_right {
         'branch',
         icon = '',
@@ -161,5 +154,3 @@ M.init = function()
 end
 
 return M
-
-

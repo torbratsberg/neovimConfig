@@ -23,6 +23,4 @@ if g:theme == 'horizon'
 elseif g:theme == 'gruvbox'
     colorscheme gruvbox
     let g:gruvbox_contrast_dark='hard'
-elseif g:theme == 'nord'
-    colorscheme nord
 endif

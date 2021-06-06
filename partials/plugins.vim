@@ -20,6 +20,5 @@ Plug 'kyazdani42/nvim-web-devicons'
 Plug 'mxw/vim-jsx'
 Plug 'morhetz/gruvbox'
 Plug 'ntk148v/vim-horizon'
-Plug 'arcticicestudio/nord-vim'
 
 call plug#end()
