@@ -91,7 +91,7 @@ nmap <leader>tn :tabnew<cr>
 nmap <leader>tc :tabclose<cr>
 
 " Tabular
-nmap <leader>tt :Tabularize /\s<cr>
+vmap <leader>tt :Tabularize /
 
 " Misc commands
 " √ = Alt + j & ª = Alt + k

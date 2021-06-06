@@ -90,27 +90,14 @@ M.init = function()
         -- mode component
         function()
             local mode_color = {
-                n = colors.red,
-                i = colors.magenta,
-                v = colors.blue,
-                V = colors.blue,
+                n      = colors.red,
+                i      = colors.magenta,
+                v      = colors.blue,
+                V      = colors.blue,
                 [''] = colors.blue,
-                -- [''] = colors.blue,
-                c = colors.magenta,
-                -- no = colors.red,
-                -- s = colors.orange,
-                -- S = colors.orange,
-                -- [''] = colors.orange,
-                -- ic = colors.yellow,
-                R = colors.cyan,
-                -- Rv = colors.violet,
-                -- cv = colors.red,
-                -- ce = colors.red,
-                -- r = colors.cyan,
-                -- rm = colors.cyan,
-                -- ['r?'] = colors.cyan,
-                -- ['!'] = colors.red,
-                t = colors.red
+                c      = colors.magenta,
+                R      = colors.cyan,
+                t      = colors.red
             }
             vim.api.nvim_command(
             'hi! LualineMode guifg=' .. mode_color[vim.fn.mode()] .. " guibg=" .. colors.bg)
