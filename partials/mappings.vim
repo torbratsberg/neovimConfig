@@ -51,19 +51,19 @@ nmap <leader>g<Right> :diffget //3<cr>
 
 " Looking up stuff commands
 nmap <Leader>f :lua require('telescope.builtin')
-            \.find_files(require('telescope.themes').get_ivy({}))<cr>
+            \.find_files(require('telescope.themes').get_dropdown({}))<cr>
 nmap <leader>b :lua require('telescope.builtin')
-            \.buffers(require('telescope.themes').get_ivy({}))<cr>
+            \.buffers(require('telescope.themes').get_dropdown({}))<cr>
 nmap <leader>rl :lua require('telescope.builtin')
-            \.live_grep(require('telescope.themes').get_ivy({}))<cr>
+            \.live_grep(require('telescope.themes').get_dropdown({}))<cr>
 nmap <leader>rs :lua require('telescope.builtin')
-            \.grep_string(require('telescope.themes').get_ivy({}))<cr>
+            \.grep_string(require('telescope.themes').get_dropdown({}))<cr>
 nmap <leader>nv :lua require('luafiles.init')
             \.search_config()<CR>
 nmap <leader>nn :lua require('luafiles.init')
             \.search_notes()<CR>
 nmap <leader>e :lua require('telescope.builtin')
-            \.file_browser(require('telescope.themes').get_ivy({}))<cr>
+            \.file_browser(require('telescope.themes').get_dropdown({}))<cr>
 
 " In file finding
 nmap gs /

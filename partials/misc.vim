@@ -11,6 +11,8 @@ augroup END
 function FormatFileFunc()
     execute '%s/([ ]/(/g'
     execute '%s/[ ])/)/g'
+    execute '%s/[[][ ]/[/g'
+    execute '%s/[ ][]]/]/g'
 endfunction
 
 " Prints the highlight group of word under cursor

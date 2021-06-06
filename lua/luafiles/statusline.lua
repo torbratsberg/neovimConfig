@@ -44,7 +44,7 @@ M.init = function()
     end
 
     local colors = {}
-    if vim.g.theme == 'seoul256' then
+    if vim.g.theme == 'seoul256' or vim.g.theme == 'gruvbox' then
         colors = {
             bg       = '#3f3f3f',
             fg       = '#d9d9d9',
