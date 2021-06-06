@@ -16,8 +16,10 @@ nmap <leader>cr <Plug>(coc-references)
 nmap <leader>cn <Plug>(coc-rename)
 nmap <leader>cp :CocList diagnostics<cr>
 nmap <leader>co :CocList outline<cr>
-imap <nowait><expr> <C-f> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(1)\<cr>" : "\<Right>"
-imap <nowait><expr> <C-b> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(0)\<cr>" : "\<Left>"
+imap <nowait><expr> <C-f> coc#float#has_scroll() ?
+            \"\<c-r>=coc#float#scroll(1)\<cr>" : "\<Right>"
+imap <nowait><expr> <C-b> coc#float#has_scroll() ?
+            \"\<c-r>=coc#float#scroll(0)\<cr>" : "\<Left>"
 
 " Add characters
 nmap <leader>qd ciw""<esc>P
@@ -109,7 +111,8 @@ nmap gns >>O{<esc>jo<backspace>}<esc>kki <esc>i
 " Console logs variable under cursor on next line
 nmap gcl viwyoconsole.log('<esc>pA', <esc>pA);<esc>_
 " Selects indentation level (See partials/misc.vim for function code)
-nmap <cr> :call SelectIndentWithSpace()<CR>
+nmap <leader><cr> :call SelectIndentWithSpace()<cr>
+nmap <cr> :call SelectIndent()<cr>
 
 " Character completion
 imap (<Tab> ()<Left>
