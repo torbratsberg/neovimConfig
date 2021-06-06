@@ -3,21 +3,6 @@ local M = {}
 M.init = function()
     local lualine = require 'lualine'
 
-    -- Make new colors for other colorschemes
-    local colors = {
-        bg = '#202328',
-        fg = '#bbc2cf',
-        yellow = '#ECBE7B',
-        cyan = '#008080',
-        green = '#98be65',
-        orange = '#FF8800',
-        violet = '#a9a1e1',
-        magenta = '#c678dd',
-        blue = '#51afef',
-        red = '#ec5f67',
-        inactive = "#444444",
-    }
-
     local conditions = {
         buffer_not_empty = function() return vim.fn.empty(vim.fn.expand('%:t')) ~= 1 end,
         hide_in_width = function() return vim.fn.winwidth(0) > 80 end,
@@ -29,15 +14,6 @@ M.init = function()
     }
 
     local config = {
-        options = {
-            -- Disable sections and component separators
-            component_separators = "",
-            section_separators = "",
-            theme = {
-                normal = {c = {fg = colors.fg, bg = colors.bg}},
-                inactive = {c = {fg = colors.inactive, bg = colors.bg}}
-            }
-        },
         sections = {
             -- these are to remove the defaults
             lualine_a = {},
@@ -66,6 +42,43 @@ M.init = function()
     local function ins_right(component)
         table.insert(config.sections.lualine_x, component)
     end
+
+    local colors = {}
+    if vim.g.theme == 'seoul256' then
+        colors = {
+            bg       = '#3f3f3f',
+            fg       = '#d9d9d9',
+            cyan     = '#6FBCBD',
+            green    = '#719872',
+            orange   = '#E19972',
+            magenta  = '#d9d9d9',
+            blue     = '#98bcbd',
+            red      = '#ffbfbd',
+            inactive = '#666666',
+        }
+    elseif vim.g.theme == 'horizon' then
+        colors = {
+            bg       = '#202328',
+            fg       = '#bbc2cf',
+            cyan     = '#008080',
+            green    = '#98be65',
+            orange   = '#FF8800',
+            magenta  = '#c678dd',
+            blue     = '#51afef',
+            red      = '#ec5f67',
+            inactive = '#444444',
+        }
+    end
+
+    config.options = {
+        -- Disable sections and component separators
+        component_separators = "",
+        section_separators = "",
+        theme = {
+            normal = {c = {fg = colors.fg, bg = colors.bg}},
+            inactive = {c = {fg = colors.inactive, bg = colors.bg}}
+        }
+    }
 
     ins_left {
         function() return '▊' end,
@@ -111,12 +124,6 @@ M.init = function()
         'filename',
         condition = conditions.buffer_not_empty,
         color = {fg = colors.magenta, gui = 'italic'},
-    }
-
-    ins_left {
-        'filetype',
-        icons_enabled = true,
-        color = {fg = colors.green},
     }
 
     -- Insert mid section

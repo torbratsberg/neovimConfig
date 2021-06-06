@@ -1,5 +1,5 @@
 " Change this variable instead of colorscheme option (for more customization)
-let g:theme = 'horizon'
+let g:theme = 'seoul256'
 
 syntax on
 set background=dark
@@ -20,7 +20,11 @@ if g:theme == 'horizon'
     highlight! link TabLineFill Character
     highlight! link TabLine Folded
     highlight! link TabLineSel Directory
+    lua require('luafiles.statusline').init()
 elseif g:theme == 'gruvbox'
     colorscheme gruvbox
     let g:gruvbox_contrast_dark='hard'
+elseif g:theme == 'seoul256'
+    colorscheme seoul256
+    lua require('luafiles.statusline').init()
 endif
