@@ -8,3 +8,4 @@ runtime! partials/misc.vim
 runtime! partials/commands.vim
 
 lua require('luafiles.init')
+lua require('luafiles.statusline').init()
