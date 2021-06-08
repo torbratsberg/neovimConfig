@@ -19,9 +19,6 @@ if g:theme == 'horizon'
     highlight! link TabLineFill Character
     highlight! link TabLine Folded
     highlight! link TabLineSel Directory
-elseif g:theme == 'gruvbox'
-    colorscheme gruvbox
-    let g:gruvbox_contrast_dark='hard'
 elseif g:theme == 'seoul256'
     let g:seoul256_background = 235
     colorscheme seoul256
