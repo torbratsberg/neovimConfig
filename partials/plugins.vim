@@ -10,7 +10,6 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'easymotion/vim-easymotion'
-Plug 'hoob3rt/lualine.nvim'
 Plug 'diepm/vim-rest-console'
 Plug 'godlygeek/tabular'
 
@@ -21,5 +20,6 @@ Plug 'mxw/vim-jsx'
 Plug 'morhetz/gruvbox'
 Plug 'ntk148v/vim-horizon'
 Plug 'junegunn/seoul256.vim'
+Plug 'editorconfig/editorconfig-vim'
 
 call plug#end()

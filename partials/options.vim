@@ -11,7 +11,6 @@ set listchars=tab:\ \ ,nbsp:·,trail:·
 set nobackup
 set nohlsearch
 set noshowcmd
-set noshowmode
 set noswapfile
 set nowrap
 set nowritebackup
