@@ -8,11 +8,8 @@ inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
             \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 " Coc commands
-xmap <leader>cf <Plug>(coc-format-selected)
 vmap <leader>cf <Plug>(coc-format-selected)
-nmap <leader>cf gg<Plug>(coc-format-selected)G
 nmap <leader>cd <Plug>(coc-definition)
-nmap <leader>cr <Plug>(coc-references)
 nmap <leader>cn <Plug>(coc-rename)
 nmap <leader>cp :CocList diagnostics<cr>
 nmap <leader>co :CocList outline<cr>
@@ -106,10 +103,6 @@ vnoremap , zf
 nmap <tab><tab> <C-^>
 " Makes nice comment block
 nmap gcb 0i=== <esc>A ===<esc>yypyypVr=kkVr=Vjjgc
-" Indents current line and wraps in {}
-nmap gns >>O{<esc>jo<backspace>}<esc>kki <esc>i
-" Console logs variable under cursor on next line
-nmap gcl viwyoconsole.log('<esc>pA', <esc>pA);<esc>_
 " Selects indentation level (See partials/misc.vim for function code)
 nmap <leader><cr> :call SelectIndentWithSpace()<cr>
 nmap <cr> :call SelectIndent()<cr>
@@ -128,11 +121,3 @@ nmap <leader>l :cnext<cr>
 nmap <leader>H :cfirst<cr>
 nmap <leader>L :clast<cr>
 nmap <leader>qf :Telescope quickfix<cr>
-
-" Fix for a problem I had
-" nmap gx <nop>
-
-" Make nmaps for navigating to marks with space{number}
-for i in range(0, 9)
-    exec "nmap <leader>" . i . " '" . i
-endfor
