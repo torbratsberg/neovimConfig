@@ -1,4 +1,3 @@
-" Change this variable instead of colorscheme option (for more customization)
 let g:theme = 'seoul256'
 
 syntax on
@@ -22,4 +21,7 @@ if g:theme == 'horizon'
 elseif g:theme == 'seoul256'
     let g:seoul256_background = 235
     colorscheme seoul256
+    hi! link SassClass Special
+    hi! link PythonSelf WhiteSpace
+    syn keyword PythonSelf self
 endif
