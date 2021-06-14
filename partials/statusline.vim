@@ -1,5 +1,5 @@
 set statusline=
-set statusline+=%#NormalFloat#
+set statusline+=%#CursorLineNr#
 set statusline+=\ [%M%R]\ \|"
 set statusline+=\ %f
 set statusline+=%=
