@@ -1,7 +1,5 @@
 " Keyboards should have escape key on home row
 imap jj <Esc>
-cmap jj <C-c>
-tmap jj <C-\><C-n>
 
 " Enter to select first or selected from completion menu
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
@@ -43,26 +41,18 @@ nmap <leader>gp :Git push<cr>
 nmap <leader>gl :Git log<cr>
 nmap <leader>gbl :Git blame<cr>
 nmap <leader>gbr :Telescope git_branches<cr>
-nmap <leader>gr :Git remote<cr>
 nmap <leader>gd :Gdiffsplit<cr>
 nmap <leader>g<left> :diffget //2<cr>
 nmap <leader>g<Right> :diffget //3<cr>
 
 " Looking up stuff commands
-nmap <Leader>f :lua require('telescope.builtin')
-            \.find_files(require('telescope.themes').get_dropdown({}))<cr>
-nmap <leader>b :lua require('telescope.builtin')
-            \.buffers(require('telescope.themes').get_dropdown({}))<cr>
-nmap <leader>rl :lua require('telescope.builtin')
-            \.live_grep(require('telescope.themes').get_dropdown({}))<cr>
-nmap <leader>rs :lua require('telescope.builtin')
-            \.grep_string(require('telescope.themes').get_dropdown({}))<cr>
-nmap <leader>nv :lua require('luafiles.init')
-            \.search_config()<CR>
-nmap <leader>nn :lua require('luafiles.init')
-            \.search_notes()<CR>
-nmap <leader>e :lua require('telescope.builtin')
-            \.file_browser(require('telescope.themes').get_dropdown({}))<cr>
+nmap <Leader>f :lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown({}))<cr>
+nmap <leader>b :lua require('telescope.builtin').buffers(require('telescope.themes').get_dropdown({}))<cr>
+nmap <leader>rl :lua require('telescope.builtin').live_grep(require('telescope.themes').get_dropdown({}))<cr>
+nmap <leader>rs :lua require('telescope.builtin').grep_string(require('telescope.themes').get_dropdown({}))<cr>
+nmap <leader>nv :lua require('luafiles.init').search_config()<CR>
+nmap <leader>nn :lua require('luafiles.init').search_notes()<CR>
+nmap <leader>e :lua require('telescope.builtin').file_browser(require('telescope.themes').get_dropdown({}))<cr>
 
 " In file finding
 nmap gs /
@@ -75,22 +65,6 @@ nmap <C-h> <C-w>h
 nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
-" Resize splits easier
-nnoremap <silent> <Leader><Up> :exe "resize " .
-            \(winheight(0) * 3/2)<CR>
-nnoremap <silent> <Leader><Down> :exe "resize " .
-            \(winheight(0) * 2/3)<CR>
-nnoremap <silent> <Leader><Right> :exe "vertical resize " .
-            \(winwidth(0) * 3/2)<CR>
-nnoremap <silent> <Leader><Left> :exe "vertical resize " .
-            \(winwidth(0) * 2/3)<CR>
-
-" Tab commands
-nmap <leader>tn :tabnew<cr>
-nmap <leader>tc :tabclose<cr>
-
-" Tabular
-vmap <leader>tt :Tabularize /
 
 " Misc commands
 " √ = Alt + j & ª = Alt + k
@@ -98,7 +72,7 @@ nmap ª :move-2<cr>
 nmap √ :move+1<cr>
 vmap < < gv
 vmap > > gv
-nnoremap <silent> , @=(foldlevel('.')?'za':"\<Space>")<cr>
+nnoremap , za
 vnoremap , zf
 nmap <tab><tab> <C-^>
 " Makes nice comment block
@@ -118,6 +92,4 @@ inoremap {<cr> {<cr>}<ESC>O
 " Quickfix
 nmap <leader>h :cprev<cr>
 nmap <leader>l :cnext<cr>
-nmap <leader>H :cfirst<cr>
-nmap <leader>L :clast<cr>
 nmap <leader>qf :Telescope quickfix<cr>

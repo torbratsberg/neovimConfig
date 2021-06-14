@@ -11,14 +11,12 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'easymotion/vim-easymotion'
 Plug 'diepm/vim-rest-console'
-Plug 'godlygeek/tabular'
 
 " Themes and syntax
-Plug 'torbratsberg/vim-highlight-word'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'mxw/vim-jsx'
+Plug 'posva/vim-vue'
 Plug 'ntk148v/vim-horizon'
 Plug 'junegunn/seoul256.vim'
-Plug 'editorconfig/editorconfig-vim'
 
 call plug#end()

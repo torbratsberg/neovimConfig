@@ -3,14 +3,14 @@ set completeopt=longest,menuone,noinsert
 set expandtab
 set hidden
 set history=400
-set ignorecase
+" set ignorecase
 set laststatus=2
 set lazyredraw
-set list
-set listchars=tab:\ \ ,nbsp:·,trail:·
-set nobackup
+" set list
+" set listchars=tab:\ \ ,nbsp:·,trail:·
+" set nobackup
 set nohlsearch
-set noshowcmd
+" set noshowcmd
 set noswapfile
 set nowrap
 set nowritebackup
@@ -19,10 +19,9 @@ set path=**
 set relativenumber
 set scrolloff=8
 set shiftwidth=4
-set shortmess+=c
-set showmatch
+" set shortmess+=c
 set sidescrolloff=20
-set smartcase
+" set smartcase
 set smartindent
 set splitbelow
 set splitright
