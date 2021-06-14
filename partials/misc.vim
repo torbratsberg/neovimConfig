@@ -15,15 +15,6 @@ function FormatFileFunc()
     execute '%s/[ ][]]/]/g'
 endfunction
 
-" Prints the highlight group of word under cursor
-nmap <Leader>. :call <SID>SynStack()<CR>
-function! <SID>SynStack()
-    if !exists("*synstack")
-        return
-    endif
-    echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
-endfunc
-
 function! SelectIndent ()
     let temp_var=indent(line("."))
     while indent(line(".")-1) >= temp_var
