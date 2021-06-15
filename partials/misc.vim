@@ -1,7 +1,10 @@
 filetype plugin indent on
 autocmd FileType scss setl iskeyword+=@-@
 
-function FormatFileFunc()
+command! Qbuffers call setqflist(map(filter(range(1, bufnr('$')), 'buflisted(v:val)'), '{"bufnr":v:val}'))
+command! FormatFile call FormatFileFunc()
+
+function! FormatFileFunc()
     execute '%s/([ ]/(/g'
     execute '%s/[ ])/)/g'
     execute '%s/[[][ ]/[/g'

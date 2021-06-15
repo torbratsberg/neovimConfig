@@ -14,6 +14,7 @@ lua require'lspconfig'.tsserver.setup{on_attach=require'completion'.on_attach}
 lua require'lspconfig'.intelephense.setup{on_attach=require'completion'.on_attach}
 lua require'lspconfig'.pyls.setup{on_attach=require'completion'.on_attach}
 lua require'lspconfig'.vuels.setup{on_attach=require'completion'.on_attach}
+lua require'lspconfig'.gopls.setup{on_attach=require'completion'.on_attach}
 
 " Initiate Treesitter
 lua << EOF
