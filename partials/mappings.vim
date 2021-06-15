@@ -1,17 +1,12 @@
 " Keyboards should have escape key on home row
 imap jj <Esc>
 
-" Enter to select first or selected from completion menu
-inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
-            \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
-
-" Coc commands
-nmap <leader>cd <Plug>(coc-definition)
-nmap <leader>cn <Plug>(coc-rename)
-nmap <leader>cp :CocList diagnostics<cr>
-nmap <leader>co :CocList outline<cr>
-imap <nowait><expr> <C-f> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(1)\<cr>" : "\<Right>"
-imap <nowait><expr> <C-b> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(0)\<cr>" : "\<Left>"
+" LSP stuff
+nmap <leader>cd :lua vim.lsp.buf.definition()<cr>
+nmap <leader>cn :lua vim.lsp.buf.rename()<cr>
+nmap <leader>cr :lua vim.lsp.buf.references()<cr>
+nmap <leader>cf :lua vim.lsp.buf.formatting()<CR>
+nmap <leader>cj :lua vim.lsp.buf.hover()<CR>
 
 " Add characters
 nmap <leader>qd ciw""<esc>P
@@ -27,8 +22,6 @@ nmap <leader>w :w<cr>
 nmap <leader>s :%s///<Left><Left>
 vmap <leader>y "+y
 tmap <leader><esc> <C-\><C-n>
-nmap <leader>tw :ToggleHightlightCWord<cr>
-nmap <leader>pp :Prettier<cr>
 
 " Git commands
 nmap <leader>gs :G<cr>

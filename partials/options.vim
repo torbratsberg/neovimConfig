@@ -1,5 +1,5 @@
 set colorcolumn=80
-set completeopt=longest,menuone,noinsert
+set completeopt=menuone,noinsert
 set expandtab
 set hidden
 set history=400

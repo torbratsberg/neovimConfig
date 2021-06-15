@@ -1,13 +1,6 @@
 filetype plugin indent on
 autocmd FileType scss setl iskeyword+=@-@
 
-" Easymotion search triggered all possible errors in Coc, this is fix for that
-augroup EasyMotionFix
-    autocmd!
-    autocmd User EasyMotionPromptBegin silent! CocDisable
-    autocmd User EasyMotionPromptEnd silent! CocEnable
-augroup END
-
 function FormatFileFunc()
     execute '%s/([ ]/(/g'
     execute '%s/[ ])/)/g'
