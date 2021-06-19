@@ -9,12 +9,18 @@ runtime! partials/misc.vim
 runtime! partials/commands.vim
 
 " LSP Stuff
-lua require'lspconfig'.cssls.setup{on_attach=require'completion'.on_attach}
-lua require'lspconfig'.tsserver.setup{on_attach=require'completion'.on_attach}
-lua require'lspconfig'.intelephense.setup{on_attach=require'completion'.on_attach}
-lua require'lspconfig'.pyls.setup{on_attach=require'completion'.on_attach}
-lua require'lspconfig'.vuels.setup{on_attach=require'completion'.on_attach}
-lua require'lspconfig'.gopls.setup{on_attach=require'completion'.on_attach}
+lua << EOF
+--Enable (broadcasting) snippet capability for completion
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities.textDocument.completion.completionItem.snippetSupport = true
+
+require'lspconfig'.cssls.setup{on_attach=require'completion'.on_attach, capabilities=capabilities}
+require'lspconfig'.tsserver.setup{on_attach=require'completion'.on_attach}
+require'lspconfig'.intelephense.setup{on_attach=require'completion'.on_attach}
+require'lspconfig'.pyls.setup{on_attach=require'completion'.on_attach}
+require'lspconfig'.vuels.setup{on_attach=require'completion'.on_attach}
+require'lspconfig'.gopls.setup{on_attach=require'completion'.on_attach}
+EOF
 
 " Initiate Treesitter
 lua << EOF
