@@ -1,7 +1,6 @@
 filetype plugin indent on
 autocmd FileType scss setl iskeyword+=@-@
 
-command! Qbuffers call setqflist(map(filter(range(1, bufnr('$')), 'buflisted(v:val)'), '{"bufnr":v:val}'))
 command! FormatFile call FormatFileFunc()
 
 function! FormatFileFunc()
