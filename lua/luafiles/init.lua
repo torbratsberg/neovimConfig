@@ -1,26 +1,27 @@
-local M = {}
+--Enable (broadcasting) snippet capability for completion
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities.textDocument.completion.completionItem.snippetSupport = true
 
+require'lspconfig'.cssls.setup{on_attach=require'completion'.on_attach, capabilities=capabilities}
+require'lspconfig'.tsserver.setup{on_attach=require'completion'.on_attach}
+require'lspconfig'.intelephense.setup{on_attach=require'completion'.on_attach}
+require'lspconfig'.pyls.setup{on_attach=require'completion'.on_attach}
+require'lspconfig'.vuels.setup{on_attach=require'completion'.on_attach}
+require'lspconfig'.gopls.setup{on_attach=require'completion'.on_attach}
+
+-- Initiate Treesitter
+require'nvim-treesitter.configs'.setup{
+    highlight = {
+        enable = true
+    },
+    indent = {
+        enable = true,
+    }
+}
+
+-- Telescope configs
 require('telescope').setup{
     defaults = {
         file_ignore_patterns = {'%.png', '%.jpg', '%.jpeg', '%.woff', '%.woff2', '%.map', 'build/*'},
     }
 }
-
-M.search_notes = function()
-    require('telescope.builtin').find_files({
-        prompt_title = 'Notes',
-        cwd = '~/main/notes/',
-        previewer = false,
-    })
-end
-
-M.search_config = function()
-    require('telescope.builtin').find_files({
-        prompt_title = 'NVIM Config files',
-        cwd = '~/.config/nvim/',
-        theme = 'get_ivy'
-    })
-end
-
-return M
-

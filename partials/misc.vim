@@ -1,6 +1,12 @@
 filetype plugin indent on
 autocmd FileType scss setl iskeyword+=@-@
 
+" Since <cr> is mapped to SelectIndent(), selecting from qf list did not work
+augroup CrMapFix
+    autocmd!
+    autocmd FileType qf nmap <buffer> <cr> <cr>
+augroup END
+
 command! FormatFile call FormatFileFunc()
 
 function! FormatFileFunc()
@@ -32,4 +38,3 @@ function! SelectIndentWithSpace ()
         exe "normal j"
     endwhile
 endfun
-

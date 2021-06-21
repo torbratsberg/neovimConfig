@@ -11,10 +11,6 @@ nmap <leader>cj :lua vim.lsp.buf.hover()<cr>
 " Add characters
 nmap <leader>qd ciw""<esc>P
 nmap <leader>qs ciw''<esc>P
-vmap <leader>qd s""<esc>P
-vmap <leader>qs s''<esc>P
-nmap <leader>; A;<esc>
-nmap <leader>, A,<esc>
 
 " Leader misc commands
 nmap <leader>cs :source ~/.config/nvim/init.vim<cr>
@@ -40,8 +36,7 @@ nmap <Leader>f :lua require('telescope.builtin').find_files(require('telescope.t
 nmap <leader>b :lua require('telescope.builtin').buffers(require('telescope.themes').get_dropdown({}))<cr>
 nmap <leader>rl :lua require('telescope.builtin').live_grep(require('telescope.themes').get_dropdown({}))<cr>
 nmap <leader>rs :lua require('telescope.builtin').grep_string(require('telescope.themes').get_dropdown({}))<cr>
-nmap <leader>nv :lua require('luafiles.init').search_config()<cr>
-nmap <leader>nn :lua require('luafiles.init').search_notes()<cr>
+nmap <leader>nv :lua require('luafiles.telescope').search_config()<cr>
 nmap <leader>e :lua require('telescope.builtin').file_browser(require('telescope.themes').get_dropdown({}))<cr>
 
 " In file finding
