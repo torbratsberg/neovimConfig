@@ -13,7 +13,7 @@ nmap <leader>qd ciw""<esc>P
 nmap <leader>qs ciw''<esc>P
 
 " Leader misc commands
-nmap <leader>cs :source ~/.config/nvim/init.vim<cr>
+nmap <leader>cs :source %<cr>
 nmap <leader>w :w<cr>
 nmap <leader>s :%s///<Left><Left>
 vmap <leader>y "+y
@@ -21,10 +21,6 @@ tmap <leader><esc> <C-\><C-n>
 
 " Git commands
 nmap <leader>gs :G<cr>
-nmap <leader>gc :Git commit<cr>
-nmap <leader>gg :Git pull<cr>
-nmap <leader>gp :Git push<cr>
-nmap <leader>gl :Git log<cr>
 nmap <leader>gbl :Git blame<cr>
 nmap <leader>gbr :Telescope git_branches<cr>
 nmap <leader>gd :Gdiffsplit<cr>
@@ -40,16 +36,9 @@ nmap <leader>nv :lua require('luafiles.telescope').search_config()<cr>
 nmap <leader>e :lua require('telescope.builtin').file_browser(require('telescope.themes').get_dropdown({}))<cr>
 
 " In file finding
-nmap gs /
 map <leader>a <Plug>(easymotion-bd-f)
 map <leader>j <Plug>(easymotion-j)
 map <leader>k <Plug>(easymotion-k)
-
-" Easier movement between splits
-nmap <C-h> <C-w>h
-nmap <C-j> <C-w>j
-nmap <C-k> <C-w>k
-nmap <C-l> <C-w>l
 
 " Misc commands
 " √ = Alt + j & ª = Alt + k
@@ -79,4 +68,3 @@ inoremap {<cr> {<cr>}<ESC>O
 " Quickfix
 nmap <leader>h :cprev<cr>
 nmap <leader>l :cnext<cr>
-nmap <leader>qf :Telescope quickfix<cr>
