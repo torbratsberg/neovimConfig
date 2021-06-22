@@ -19,7 +19,7 @@ if g:theme == 'horizon'
     hi! link TabLine Folded
     hi! link TabLineSel Directory
 elseif g:theme == 'seoul256'
-    let g:seoul256_background = 235
+    let g:seoul256_background = 234
     colorscheme seoul256
     hi! link SassClass Special
     hi! link PythonSelf WhiteSpace

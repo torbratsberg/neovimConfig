@@ -22,7 +22,7 @@ require'nvim-treesitter.configs'.setup{
 -- Telescope configs
 require('telescope').setup{
     defaults = {
-        file_ignore_patterns = {'%.png', '%.jpg', '%.jpeg', '%.woff', '%.woff2', '%.map', 'build/*'},
+        file_ignore_patterns = {'%.png', '%.jpg', '%.jpeg', '%.woff', '%.woff2', '%.ttf', '%.eot', '%.map', 'build/*'},
         file_sorter = require('telescope.sorters').get_fzy_sorter,
     },
     extensions = {
