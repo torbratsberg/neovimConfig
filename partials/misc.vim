@@ -17,6 +17,10 @@ function! FormatFileFunc()
 endfunction
 
 function! SelectIndent ()
+    if indent(line(".")) == 0
+        exe "normal vip"
+        return
+    endif
     let temp_var=indent(line("."))
     while indent(line(".")-1) >= temp_var
         exe "normal k"
@@ -29,6 +33,10 @@ endfun
 
 " Selects indentation level including empty lines
 function! SelectIndentWithSpace ()
+    if indent(line(".")) == 0
+        exe "normal vip"
+        return
+    endif
     let temp_var=indent(line("."))
     while indent(line(".")-1) >= temp_var || (indent(line(".")-1) == 0 && strwidth(getline(line(".")-1)) == 0)
         exe "normal k"

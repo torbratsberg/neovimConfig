@@ -13,7 +13,6 @@ nmap <leader>qd ciw""<esc>P
 nmap <leader>qs ciw''<esc>P
 
 " Leader misc commands
-nmap <leader>cs :source %<cr>
 nmap <leader>w :w<cr>
 nmap <leader>s :%s///<Left><Left>
 vmap <leader>y "+y
@@ -51,6 +50,7 @@ vmap > > gv
 nnoremap , za
 vnoremap , zf
 nmap <tab><tab> <C-^>
+nmap <leader>cs :so ~/.config/nvim/init.vim<cr>
 " Makes nice comment block
 nmap gcb 0i=== <esc>A ===<esc>yypyypVr=kkVr=Vjjgc
 " Selects indentation level (See partials/misc.vim for function code)

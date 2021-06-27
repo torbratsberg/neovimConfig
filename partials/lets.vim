@@ -9,5 +9,7 @@ let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']
 let mapleader=" "
 let leader=" "
 
+let g:user_emmet_leader_key='<C-l>'
+
 " Use , instead of ; in EasyMotion search for ISO layout convenience
 let g:EasyMotion_keys = get(g:, 'EasyMotion_keys', 'asdghklqwertyuiopzxcvbnmfj,')
