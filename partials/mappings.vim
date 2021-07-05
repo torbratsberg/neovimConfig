@@ -32,6 +32,7 @@ nmap <leader>b :lua require('telescope.builtin').buffers(require('telescope.them
 nmap <leader>rl :lua require('telescope.builtin').live_grep(require('telescope.themes').get_dropdown({}))<cr>
 nmap <leader>rs :lua require('telescope.builtin').grep_string(require('telescope.themes').get_dropdown({}))<cr>
 nmap <leader>nv :lua require('luafiles.telescope').search_config()<cr>
+nmap <leader>nn :lua require('luafiles.telescope').search_notes()<cr>
 nmap <leader>e :lua require('telescope.builtin').file_browser(require('telescope.themes').get_dropdown({}))<cr>
 
 " In file finding
@@ -47,8 +48,6 @@ vmap J :m '>+1<cr>gv=gv
 vmap K :m '<-2<cr>gv=gv
 vmap < < gv
 vmap > > gv
-nnoremap , za
-vnoremap , zf
 nmap <tab><tab> <C-^>
 nmap <leader>cs :so ~/.config/nvim/init.vim<cr>
 " Makes nice comment block
