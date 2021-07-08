@@ -18,7 +18,7 @@ endfunction
 
 function! SelectIndent ()
     if indent(line(".")) == 0
-        exe "normal vip"
+        exe "normal vap"
         return
     endif
     let temp_var=indent(line("."))
@@ -34,7 +34,7 @@ endfun
 " Selects indentation level including empty lines
 function! SelectIndentWithSpace ()
     if indent(line(".")) == 0
-        exe "normal vip"
+        exe "normal vap"
         return
     endif
     let temp_var=indent(line("."))
