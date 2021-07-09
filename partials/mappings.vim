@@ -7,6 +7,7 @@ nmap <leader>cn :lua vim.lsp.buf.rename()<cr>
 nmap <leader>cr :lua vim.lsp.buf.references()<cr>
 nmap <leader>cf :lua vim.lsp.buf.formatting()<cr>
 nmap <leader>cj :lua vim.lsp.buf.hover()<cr>
+nmap <leader>tt :TroubleToggle<cr>
 
 " Add characters
 nmap <leader>qd ciw""<esc>P
