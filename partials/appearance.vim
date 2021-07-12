@@ -24,4 +24,5 @@ elseif g:theme == 'seoul256'
     hi! link SassClass Special
     hi! link PythonSelf WhiteSpace
     syn keyword PythonSelf self
+    hi! LineNr guibg=#h5h5h5 guifg=#555555
 endif
