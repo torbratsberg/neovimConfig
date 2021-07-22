@@ -13,6 +13,7 @@ Plug 'diepm/vim-rest-console'
 Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-lua/completion-nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'nvim-treesitter/playground'
 Plug 'mattn/emmet-vim'
 Plug 'folke/trouble.nvim'
 
