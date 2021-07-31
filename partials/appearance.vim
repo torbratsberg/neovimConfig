@@ -1,4 +1,4 @@
-let g:theme = 'seoul256'
+let g:theme = 'horizon'
 
 syntax on
 set background=dark

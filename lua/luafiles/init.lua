@@ -5,7 +5,8 @@ capabilities.textDocument.completion.completionItem.snippetSupport = true
 require'lspconfig'.cssls.setup{on_attach=require'completion'.on_attach, capabilities=capabilities}
 require'lspconfig'.tsserver.setup{on_attach=require'completion'.on_attach}
 require'lspconfig'.intelephense.setup{on_attach=require'completion'.on_attach}
-require'lspconfig'.pyls.setup{on_attach=require'completion'.on_attach}
+-- require'lspconfig'.pyls.setup{on_attach=require'completion'.on_attach}
+require'lspconfig'.pyright.setup{on_attach=require'completion'.on_attach}
 require'lspconfig'.vuels.setup{on_attach=require'completion'.on_attach}
 require'lspconfig'.gopls.setup{on_attach=require'completion'.on_attach}
 

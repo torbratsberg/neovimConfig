@@ -7,6 +7,7 @@ nmap <leader>cn :lua vim.lsp.buf.rename()<cr>
 nmap <leader>cr :lua vim.lsp.buf.references()<cr>
 nmap <leader>cf :lua vim.lsp.buf.formatting()<cr>
 nmap <leader>cj :lua vim.lsp.buf.hover()<cr>
+nmap <leader>ca :lua vim.lsp.buf.code_action()<cr>
 nmap <leader>tt :TroubleToggle<cr>
 
 " Add characters
@@ -56,6 +57,14 @@ nmap gcb 0i=== <esc>A ===<esc>yypyypVr=kkVr=Vjjgc
 " Selects indentation level (See partials/misc.vim for function code)
 nmap <leader><cr> :call SelectIndentWithSpace()<cr>
 nmap <cr> :call SelectIndent()<cr>
+" Basically search and replace with .
+nmap cn *``cgn
+nmap cn *``cgn
+" Vim like Y behaviour
+nmap Y yg_
+" Keep cursor in middle when searching
+nmap n nzzzv
+nmap N Nzzzv
 
 " Character completion
 imap (<Tab> ()<Left>
