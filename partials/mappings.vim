@@ -13,6 +13,7 @@ nmap <leader>tt :TroubleToggle<cr>
 " Add characters
 nmap <leader>qd ciw""<esc>P
 nmap <leader>qs ciw''<esc>P
+nmap <leader>qb ciw``<esc>P
 
 " Leader misc commands
 nmap <leader>w :w<cr>
